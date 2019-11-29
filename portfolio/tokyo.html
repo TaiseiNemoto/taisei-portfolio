@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TOKYO | PORTFOLIO</title>
+    
+    <link rel="stylesheet" type="text/css" href="../css/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/other.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/responsive.css"/>
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <a href="../index.html">TAISEI NEMOTO</a>
+        </div>
+            
+        <div class="zdo_drawer_menu">
+                
+        	<div class="zdo_drawer_bg"></div>
+        		
+        	<button type="button" class="zdo_drawer_button">
+        		<span class="zdo_drawer_bar zdo_drawer_bar1"></span>
+        		<span class="zdo_drawer_bar zdo_drawer_bar2"></span>
+        		<span class="zdo_drawer_bar zdo_drawer_bar3"></span>
+        		<span class="zdo_drawer_menu_text zdo_drawer_text">MENU</span>
+        		<span class="zdo_drawer_close zdo_drawer_text">CLOSE</span>
+        	</button>
+        		
+        	<nav class="zdo_drawer_nav_wrapper">
+        		<ul class="zdo_drawer_nav">
+        			<li>
+        				<a href="../portfolio.html">
+        					PORTFOLIO
+        				</a>
+        			</li>
+        			<li>
+        				<a href="kyoto.html">
+        					KYOTO
+        				</a>
+        			</li>
+        			<li>
+        				<a href="osaka.html">
+        					OSAKA
+        				</a>
+        			</li>
+        			<li>
+        				<a href="nagasaki.html">
+        					NAGASAKI
+        				</a>
+        			</li>
+        			<li>
+        				<a href="sakura.html">
+        					CHERRY BLOSSOM
+        				</a>
+        			</li>
+        			<li>
+        				<a href="other.html">
+        					SNAP
+        				</a>
+        			</li>
+        			<li>
+        				<a href="../about.html">
+        					BIOGRAPHY
+        				</a>
+        			</li>
+        			<li>
+        				<a href="../contact.html">
+        					CONTACT
+        				</a>
+        			</li>
+        		</ul>
+        	</nav>
+        </div>
+    </header>
+    
+    <div class="slide-wrapper">
+        
+        <div class="fade">
+            <img src="../portfolio-pic/slide.pic/DSC_4234.jpg" alt="">
+            <img src="../portfolio-pic/slide.pic/DSC_4436.jpg" alt="">
+            <img  class="lazy" src="../portfolio-pic/slide.pic/DSC_3771.jpg" alt="">
+        </div>
+        
+        <div class="sns-icon">
+            <a href="https://www.instagram.com/nemostagram22"><i class="icon fab fa-lg fa-instagram"></i></a>
+            <a class="twitter" href="https://twitter.com/nemonemonemochi"><i class="icon fab fa-lg fa-twitter" ></i></a>
+        </div>
+        
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/slick.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"></script>
+    <script type="text/javascript" src="../js/jquery.lazyload.min.js"></script>
+    <script type="text/javascript">
+        var init = {
+            autoplay: true, //自動再生
+            dots: true, //ドットのナビゲーションを表示
+            infinite: true, //スライドのループ有効化
+            speed: 1000, //切り替えのスピード（小さくすると速くなる）
+            fade: true, //フェードの有効
+        };
+        
+        $(function() {
+            var win = $(window);
+            var slider = $('.fade');
+            
+            win.on("load resize", function () {
+               if (win.width() > 560) {
+                   slider.not(".slick-initialized").slick(init);
+               } else if (slider.hasClass("slick-initialized")) {
+                   slider.slick("unslick");
+               }
+            });
+        });
+        
+        $(function () {
+	
+        	$('.zdo_drawer_button').click(function () {
+        		$(this).toggleClass('active');
+        		$('.zdo_drawer_bg').fadeToggle();
+        		$('nav').toggleClass('open');
+        	})
+        	$('.zdo_drawer_bg').click(function () {
+        		$(this).fadeOut();
+        		$('.zdo_drawer_button').removeClass('active');
+        		$('nav').removeClass('open');
+        	});
+        });
+     </script>
+</body>
+</html>

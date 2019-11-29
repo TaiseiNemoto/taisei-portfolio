@@ -1,0 +1,83 @@
+@media (max-width: 560px) {
+    .header-left {
+        padding-left: 15px;
+    }
+    
+    .sns-icon {
+        width: 51px;
+    }
+    
+    
+    /*ポートフォリオ*/
+    
+    .picture-link {
+        width: 100%;
+        padding: 20px 30px 40px 30px
+    }
+    
+    .picture-link img {
+        width: 100%;
+    }
+    
+    .link-container {
+        padding-bottom: 50px;
+        margin-bottom: 50px;
+    }
+    
+    /*バイオグラフィー*/
+    .main-container {
+        display: block !important;
+        padding-bottom: 50px;
+        margin-bottom: 50px;
+        width: 100%;
+    }
+    
+    .left-container {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .right-container {
+        width: 100%;
+        padding: 17px; 
+    }
+    
+    /*コンタクト*/
+    .contact-wrapper {
+        padding-bottom: 50px;
+        margin: 0 0 50px 0;
+    }
+    
+    form {
+        width: 100%
+    }
+    
+    .item {
+        width: 100%;
+    }
+    
+    .label {
+        width: 100%;
+        border: none;
+        padding: 10px;
+    }
+    
+    .inputs {
+        float: none;
+    }
+    
+    /*スライドショー*/
+    .slide-wrapper {
+        margin: 0 0 50px 0;
+        padding-bottom: 30px;
+    }
+    
+    .fade {
+        margin: 30px 0;
+    }
+    
+    .fade img {
+        padding: 10px 30px;
+    }
+}
